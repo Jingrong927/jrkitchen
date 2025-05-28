@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JR's Kitchen</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #fff7f0;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #fbbd08, #f2711c);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      letter-spacing: 2px;
+    }
+    .intro {
+      text-align: center;
+      padding: 20px;
+      font-size: 1.2rem;
+      color: #666;
+    }
+    .recipes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+    .recipe-card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .recipe-card:hover {
+      transform: translateY(-6px);
+    }
+    .recipe-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .content {
+      padding: 16px;
+    }
+    .content h3 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>JR's Kitchen</h1>
+  </header>
+  <div class="intro">
+    Welcome to JR's creative recipe gallery.
+  </div>
+  <div class="recipes">
+    <div class="recipe-card">
+      <img src="https://source.unsplash.com/featured/?pasta" />
+      <div class="content">
+        <h3>Tomato Basil Pasta</h3>
+        <p>Fresh tomatoes and basil for a light meal.</p>
+      </div>
+    </div>
+    <div class="recipe-card">
+      <img src="https://source.unsplash.com/featured/?salad" />
+      <div class="content">
+        <h3>Summer Salad</h3>
+        <p>Mint, melon, and lime honey dressing.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
